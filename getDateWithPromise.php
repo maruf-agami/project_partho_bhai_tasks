@@ -21,7 +21,7 @@
     <div class="container text-center">
         <h1>Get Date With Modal</h1>
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        <button type="button" id="modal_button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
             Launch demo modal
         </button>
 
@@ -38,7 +38,7 @@
                         </div>
                         <div class="modal-body">
                             <div class="input-group mb-3">
-                                <input name="date" type="date" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                <input id="date_input" name="date" type="date" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
                             </div>
                         </div>
                         <div class="modal-footer">
