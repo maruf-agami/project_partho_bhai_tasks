@@ -91,12 +91,14 @@ function displayTable(students) {
         <td>${value.roll}</td>
         <td>${value.name}</td>
         <td>
-          <button class="btn btn-primary btn-sm" type="submit">Save</button>
+          <button class="btn btn-primary btn-sm single-save" onclick="studentUpdate(${value.id})">Save</button>
         </td>
       </tr>
     
     `);
   });
+
+  // singleSave();
 }
 
 function displayCourseLabel(courseLabel) {
@@ -138,7 +140,6 @@ function filterForm1() {
       data: json,
       success: function (response) {
         console.log(response);
-        // console.log(json);
         let filterData = students.filter(
           (student) =>
             student.course_label == json.course_label &&
@@ -155,12 +156,15 @@ function filterForm1() {
 }
 filterForm1();
 
-// function singleSave() {
-//   let studentRow = $(`#single_form`);
-//   studentRow.on("submit", (e) => {
-//     e.preventDefault();
-//     let json = Object.fromEntries(new FormData(e.target).entries());
-//     console.log(json);
-//   });
-// }
-// singleSave();
+function studentUpdate(id) {
+  let student;
+  student = students.filter((std) => std.id == id);
+  $.ajax({
+    type:"POST",
+    url:"",
+    data:student,
+    success: function(response){
+      console.log(student[0]);
+    }
+  })
+}
