@@ -1,5 +1,20 @@
 [
-    "HSC (Science)",
-    "HSC (Commerce)",
-    "HSC (Arts)"
+    {
+
+        "course_label_no":"1",
+        "course_label_title":"HSC (Science)"
+
+    },
+    {
+
+        "course_label_no":"2",
+        "course_label_title":"HSC (Commerce)"
+
+    },
+    {
+
+        "course_label_no":"3",
+        "course_label_title":"HSC (Arts)"
+
+    }
 ]

@@ -1,4 +1,10 @@
 [
-    "1st Year",
-    "2nd Year"
+    {
+        "group_no": "1",
+        "group_title": "1st Year"
+    },
+    {
+        "group_no": "2",
+        "group_title": "2nd Year"
+    }
 ]
