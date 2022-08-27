@@ -1,0 +1,31 @@
+.navbar-style{
+    background-image: linear-gradient(to right,#343A40,#3b434b);
+    height: 3pc;
+}
+
+ .logo{
+    position: absolute;
+    top: -20px;
+    left: 300px;
+    text-decoration: none;
+    color: white;
+}
+.logo:hover{
+    text-decoration: none;
+    color:white;
+}
+.news-menu{
+    display: none;
+}
+
+
+@media screen and (max-width: 988px) {
+    .navbar-style {
+      display: none !important;
+    }
+    .logo{
+        position: relative;
+        top: 3px;
+        left: 5%;
+    }
+  }
