@@ -111,8 +111,14 @@
     -webkit-transform: translate3d(25%, 0, 0);
     transform: translate3d(25%, 0, 0);
 }
+.modal-header{
+    background-color: rgba(33, 33, 26, 0.189);
+}
 .modal-body{
     background-color: rgba(33, 33, 26, 0.189);
     height: 100vh;
     padding: 0px !important;
+}
+.list-group li{
+    background-color: rgba(33, 33, 26, 0.189);
 }
