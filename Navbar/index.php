@@ -65,7 +65,7 @@
         </button> -->
         <!-- <nav class="navbar"></nav> -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark main-nav">
-            <div class="container navbar-collapse-style">
+            <div class="container">
                 <a class="logo" href="#">
                     <img src="Assets/DOD-Icon-Header.png" alt="" height="30px" width="80px">
                     U.S Department of Defense
@@ -74,7 +74,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="d-md-none" id="">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle p-3" href="#" id="news-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -99,84 +99,7 @@
         </nav>
     </div>
 
-    <div class="newsDiv">
-        <div class="news-menu">
-            <div class="d-flex justify-content-between news-menu-child">
-                <div>
-                    <h5>PRESS PRODUCTS</h5>
-                    <a class="dropdown-item p-0" href="#">Today in DOD</a>
-                    <a class="dropdown-item p-0" href="#">Live Events</a>
-                    <a class="dropdown-item p-0" href="#">Releases</a>
-                    <a class="dropdown-item p-0" href="#">Advisories</a>
-                    <a class="dropdown-item p-0" href="#">Transcripts</a>
-                    <a class="dropdown-item p-0" href="#">Speeches</a>
-                    <a class="dropdown-item p-0" href="#">Publications</a>
-                    <a class="dropdown-item p-0" href="#">Contracts</a>
 
-                </div>
-                <div>
-                    <h5>NEWSROOM</h5>
-                    <a class="dropdown-item p-0" href="#">News Stories</a>
-                    <a class="dropdown-item p-0" href="#">Feature Stories</a>
-                    <a class="dropdown-item p-0" href="#">Stories from the Services</a>
-                </div>
-                <div>
-                    <h5>MULTIMEDIA</h5>
-                    <a class="dropdown-item p-0" href="#">Photos</a>
-                    <a class="dropdown-item p-0" href="#">Videos</a>
-                    <a class="dropdown-item p-0" href="#">Interactive Experiences</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="spotlightDiv">
-        <div class="spotlight-menu">
-            <div class="d-flex justify-content-between spotlight-menu-child">
-                <div>
-                    <h5>TRENDING ISSUES</h5>
-                    <a class="dropdown-item p-0" href="#">NATO</a>
-                    <a class="dropdown-item p-0" href="#">FY 2023 Defense Budget</a>
-                    <a class="dropdown-item p-0" href="#">Support for Ukrains</a>
-                    <a class="dropdown-item p-0" href="#">Military Family Support</a>
-
-                </div>
-                <div>
-                    <h5>TOPICS</h5>
-                    <a class="dropdown-item p-0" href="#">Science & Technology</a>
-                    <a class="dropdown-item p-0" href="#">Coronavirus</a>
-                    <a class="dropdown-item p-0" href="#">Face of Defense</a>
-                    <a class="dropdown-item p-0" href="#">All Spotlights</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="aboutDiv">
-        <div class="about-menu">
-            <div class="d-flex justify-content-between about-menu-child">
-                <div>
-                    <h5>LEADERSHIP</h5>
-                    <a class="dropdown-item p-0" href="#">Secretary of Defense</a>
-                    <a class="dropdown-item p-0" href="#">Deputy Secretary of Defense</a>
-                    <a class="dropdown-item p-0" href="#">Chairman of the Joint Chiefs of Staff</a>
-                    <a class="dropdown-item p-0" href="#">Vice Chairman of the Joint Chiefs of Staff</a>
-                    <a class="dropdown-item p-0" href="#">Office of t he Secretary of Defense</a>
-                    <a class="dropdown-item p-0" href="#">More Leaders</a>
-
-                </div>
-                <div>
-                    <h5>COMPONENTS</h5>
-                    <a class="dropdown-item p-0" href="#">Army</a>
-                    <a class="dropdown-item p-0" href="#">Marine Corps</a>
-                    <a class="dropdown-item p-0" href="#">Navy</a>
-                    <a class="dropdown-item p-0" href="#">Air Force</a>
-                    <a class="dropdown-item p-0" href="#">Space Force</a>
-                    <a class="dropdown-item p-0" href="#">Coast Guard</a>
-                    <a class="dropdown-item p-0" href="#">National Guard</a>
-                    <a class="dropdown-item p-0" href="#">Combatant Commands</a>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <div id="myModal" class="modal fade right">
         <div class="modal-dialog">
@@ -387,6 +310,41 @@
         </div>
     </div>
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent12" aria-controls="navbarSupportedContent12" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent12">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown12" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown12">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
 
     <script src="index.js"></script>
 </body>

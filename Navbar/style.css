@@ -1,11 +1,14 @@
-
+.navbar{
+    border-radius: 0px !important;
+}
 .navbar-style{
     background-image: linear-gradient(to right,#343A40,#3b434b);
     height: 3pc;
+    margin: 0px !important;
 }
 
  .logo{
-    position: absolute;
+    /* position: absolute; */
     top: -20px;
     left: 300px;
     text-decoration: none;
@@ -21,6 +24,14 @@
 }
 .navbar-nav li a:link{
     margin: 0px;
+}
+
+.navbar-collapse{
+    display: flex;
+    justify-content: end !important;
+}
+.collapse{
+    display: inline !important;
 }
 /* news menu styles-------------------- */
 .news-menu{
