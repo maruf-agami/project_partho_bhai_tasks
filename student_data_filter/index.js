@@ -131,10 +131,10 @@ sectionPromise
 
 $(`#filter_form_1`).on("submit", function (e) {
     e.preventDefault();
-    filterForm1();
+    makeMenu();
 });
 
-function filterForm1() {
+function makeMenu() {
     $(`#table-body`).empty();
     let json = Object.fromEntries(
         new FormData($(`#filter_form_1`)[0]).entries()
