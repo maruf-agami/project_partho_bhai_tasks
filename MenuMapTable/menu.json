@@ -1,9 +1,10 @@
 [
     {
+        "menuNo": "1",
         "menuName": "Home",
         "menuId": "",
         "pageURL": "https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_replace2",
-        "parentMenuTitle": "Go",
+        "parentMenuTitle": "About Us",
         "parentMenuNo": "1",
         "makePageTitle": "Yes",
         "makePageNo": "1",
@@ -11,13 +12,14 @@
         "forLowerNavNo": "2",
         "isExternalLinkTitle": "Yes",
         "isExternalLinkNo": "1",
-        "status": ""
+        "isActive": "1"
     },
     {
+        "menuNo": "2",
         "menuName": "About",
         "menuId": "",
         "pageURL": "https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_replace2",
-        "parentMenuTitle": "File",
+        "parentMenuTitle": "Academics",
         "parentMenuNo": "2",
         "makePageTitle": "No",
         "makePageNo": "2",
@@ -25,9 +27,10 @@
         "forLowerNavNo": "1",
         "isExternalLinkTitle": "No",
         "isExternalLinkNo": "2",
-        "status": ""
+        "isActive": "0"
     },
     {
+        "menuNo": "3",
         "menuName": "Lession",
         "menuId": "",
         "pageURL": "https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_replace2",
@@ -39,41 +42,44 @@
         "forLowerNavNo": "2",
         "isExternalLinkTitle": "Yes",
         "isExternalLinkNo": "1",
-        "status": ""
+        "isActive": "0"
     },
     {
+        "menuNo": "4",
         "menuName": "News",
         "menuId": "",
         "pageURL": "https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_replace2",
-        "parentMenuTitle": "Run",
-        "parentMenuNo": "4",
+        "parentMenuTitle": "Admission",
+        "parentMenuNo": "3",
         "makePageTitle": "No",
         "makePageNo": "2",
         "forLowerNavTitle": "Yes",
         "forLowerNavNo": "1",
         "isExternalLinkTitle": "No",
         "isExternalLinkNo": "2",
-        "status": ""
+        "isActive": "1"
     },
     {
+        "menuNo": "5",
         "menuName": "War",
         "menuId": "",
         "pageURL": "https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_replace2",
-        "parentMenuTitle": "Edit",
-        "parentMenuNo": "5",
+        "parentMenuTitle": "Teacher & Staff",
+        "parentMenuNo": "4",
         "makePageTitle": "Yes",
         "makePageNo": "1",
         "forLowerNavTitle": "No",
         "forLowerNavNo": "2",
         "isExternalLinkTitle": "Yes",
         "isExternalLinkNo": "1",
-        "status": ""
+        "isActive": "0"
     },
     {
+        "menuNo": "6",
         "menuName": "Cultural",
         "menuId": "",
         "pageURL": "https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_replace2",
-        "parentMenuTitle": "Edit",
+        "parentMenuTitle": "Activities",
         "parentMenuNo": "5",
         "makePageTitle": "No",
         "makePageNo": "2",
@@ -81,9 +87,10 @@
         "forLowerNavNo": "1",
         "isExternalLinkTitle": "Yes",
         "isExternalLinkNo": "1",
-        "status": ""
+        "isActive": "1"
     },
     {
+        "menuNo": "7",
         "menuName": "Entertainment",
         "menuId": "",
         "pageURL": "https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_replace2",
@@ -95,23 +102,25 @@
         "forLowerNavNo": "2",
         "isExternalLinkTitle": "No",
         "isExternalLinkNo": "2",
-        "status": ""
+        "isActive": "1"
     },
     {
+        "menuNo": "8",
         "menuName": "Excercise",
         "menuId": "",
         "pageURL": "https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_replace2",
-        "parentMenuTitle": "Help",
-        "parentMenuNo": "3",
+        "parentMenuTitle": "Modules Login",
+        "parentMenuNo": "6",
         "makePageTitle": "No",
         "makePageNo": "2",
         "forLowerNavTitle": "Yes",
         "forLowerNavNo": "1",
         "isExternalLinkTitle": "Yes",
         "isExternalLinkNo": "1",
-        "status": ""
+        "isActive": "0"
     },
     {
+        "menuNo": "9",
         "menuName": "Space",
         "menuId": "",
         "pageURL": "https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_replace2",
@@ -123,20 +132,21 @@
         "forLowerNavNo": "2",
         "isExternalLinkTitle": "No",
         "isExternalLinkNo": "2",
-        "status": ""
+        "isActive": "1"
     },
     {
+        "menuNo": "10",
         "menuName": "Corona",
         "menuId": "",
         "pageURL": "https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_replace2",
-        "parentMenuTitle": "Go",
-        "parentMenuNo": "1",
+        "parentMenuTitle": "Alumni",
+        "parentMenuNo": "7",
         "makePageTitle": "No",
         "makePageNo": "2",
         "forLowerNavTitle": "Yes",
         "forLowerNavNo": "1",
         "isExternalLinkTitle": "Yes",
         "isExternalLinkNo": "1",
-        "status": ""
+        "isActive": "0"
     }
 ]

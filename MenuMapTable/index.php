@@ -10,21 +10,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, then Font Awesome -->
     <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b9e84834a9.js" crossorigin="anonymous"></script>
     <style>
-        table,
-        th,
-        td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-
         /* setting the text-align property to center*/
-        th,
+
         td {
             padding: 5px;
             text-align: center;
@@ -37,57 +31,19 @@
 <body>
     <div class="container-fluid my-5">
         <div class="card">
-            <div class="card-body">
+            <div class="card-header">
                 <h3>Menu Map Table</h3>
             </div>
             <div class="card-body">
-                <!-- <form id="">
-                    <div class="border p-4">
-                        <div class="row">
-
-                            <div class="col p-2">
-                                <label for="basic-url">Course Level</label>
-                                <div class="input-group">
-                                    <select name="course_label" class="custom-select" id="courseLevelSelect">
-                                        <option selected>Select...</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col p-2">
-                                <label for="basic-url">Group</label>
-                                <div class="input-group">
-                                    <select name="group" class="custom-select" id="groupSelect">
-                                        <option selected>Select...</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col p-2">
-                                <label for="basic-url">Academic Year</label>
-                                <div class="input-group">
-                                    <input name="academic_year" type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="row d-flex justify-content-end p-2">
-                            <div class="">
-                                <button class="btn btn-primary btn-sm" type="submit">Filter</button>
-                                <button class="btn btn-secondary btn-sm">Save old to log</button>
-                                <button class="btn btn-warning btn-sm">Reset</button>
-                            </div>
-                        </div>
-
-                    </div>
-                </form> -->
                 <div class="my-3 d-flex justify-content-end">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Add</button>
+                    <button type="button" class="btn btn-primary" id="addMenu" data-toggle="modal" data-target="#exampleModalCenter">Add</button>
                 </div>
-                <div class="">
-                    <table class="table table-bordered">
+                <div class="table-responsive">
+                    <table class="table table-sm table-bordered table-hover table-striped">
                         <thead>
-                            <tr>
-                                <th>Menu Name</th>
-                                <th>Page URL</th>
+                            <tr class="text-center">
+                                <th class="text-left">Menu Name</th>
+                                <th class="text-left">Page URL</th>
                                 <th>Parent Menu No</th>
                                 <th>Make Page</th>
                                 <th>For Lower Nav</th>
@@ -107,10 +63,10 @@
 
 
     <!-- Modal -->
-    <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-lg" role="document">
             <div class="modal-content">
-                <form id="menuForm">
+                <form id="menu_map_setup_form">
                     <div class="modal-header">
                         <h5 class="modal-title">Add Menu Map</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -145,12 +101,10 @@
                             <div class="row mb-3">
                                 <div class="col-sm">
                                     <div class="input-group-prepend">
-                                        <label for="parentmenuno">Parent Menu No</label>
+                                        <label for="parentmenu">Parent Menu</label>
                                     </div>
-                                    <select name="parentmenuno" class="custom-select" id="parentmenuno">
+                                    <select name="parentmenu" class="custom-select" id="parentmenu">
                                         <option selected>Choose...</option>
-                                        <option value="1">Yes</option>
-                                        <option value="2">No</option>
 
                                     </select>
                                 </div>
@@ -194,8 +148,8 @@
                                     </div>
                                     <select name="isexternallink" class="custom-select" id="isexternallink">
                                         <option selected>Choose...</option>
-                                        <option value="0">Not City</option>
-                                        <option value="1">City</option>
+                                        <option value="1">Yes</option>
+                                        <option value="2">No</option>
                                     </select>
                                 </div>
                             </div>
@@ -203,7 +157,7 @@
                     </div>
                     <div class="modal-footer">
                         <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-                        <button type="submit" class="btn btn-primary">Make Menu</button>
+                        <button type="submit" id="menuSubmit" class="btn btn-primary">Make Menu</button>
                     </div>
                 </form>
             </div>
