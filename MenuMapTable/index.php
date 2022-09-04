@@ -28,6 +28,25 @@
         /* .table-bordered {
             border: 1px solid black !important;
         } */
+        /* .tableFixHead {
+            overflow: auto;
+            height: 100vh;
+        }
+
+        .tableFixHead thead th {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        .tableFixHead,
+        .tableFixHead td {
+            box-shadow: inset 1px -1px #000;
+        }
+
+        .tableFixHead th {
+            box-shadow: inset 1px 1px #000, 0 1px #000;
+        } */
     </style>
 
     <title>MenuMapTable</title>
@@ -43,7 +62,7 @@
                 <div class="my-3 d-flex justify-content-end">
                     <button type="button" class="btn btn-primary" id="addMenu">Add</button>
                 </div>
-                <div class="table-responsive">
+                <div class="table-responsive tableFixHead">
                     <table class="table table-sm table-bordered table-hover table-striped">
                         <thead>
                             <tr class="text-center">
