@@ -19,10 +19,15 @@
     <style>
         /* setting the text-align property to center*/
 
-        td {
+        /* td {
             padding: 5px;
             text-align: center;
-        }
+        } */
+
+
+        /* .table-bordered {
+            border: 1px solid black !important;
+        } */
     </style>
 
     <title>MenuMapTable</title>
