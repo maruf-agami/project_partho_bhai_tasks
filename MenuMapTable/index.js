@@ -92,7 +92,9 @@ function displayTable(menus) {
                       </span>
                     </td>
 
-                    <td class="text-left">${value.pageURL}</td>
+                    <td class="text-left">${
+                      value.pageURL == null ? "" : value.pageURL
+                    }</td>
 
                     <td>${
                       value.parentMenuTitle ? value.parentMenuTitle : "-"
@@ -150,7 +152,7 @@ function displayTable(menus) {
 
         // $(`#menu_map_setup_form_parent_menu_select`).empty();
         $(`#menu_map_setup_form_parent_menu_select`).val(
-          value.parentMenuTitle == null ? "" : value.parentMenuNo
+          value.parentMenuNo == null ? "" : value.parentMenuNo
         );
         $(`#menu_map_setup_form_make_page_select`).val(value.makePageNo);
 
