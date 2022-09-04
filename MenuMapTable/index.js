@@ -42,14 +42,9 @@ menuDataPromise
 
 $(`#addMenu`).on("click", function () {
   $("#menu_map_setup_form")[0].reset();
-  $(`#exampleModalCenter`).modal("show");
-  $(`.modal-title`).text("Add Menu");
-
-  $(`#menu_map_setup_form_menu_submit_button`).text("Make Menu");
-});
-
-$(`#modal_close_button`).on("click", function () {
-  $(`.t`).remove();
+  $(`#menu_map_setup_modal`).modal("show");
+  $(`#menu_map_setup_modal .modal-title`).text("Add Menu");
+  $(`#menu_map_setup_form_menu_submit_button`).text("Create Menu");
 });
 
 $(`#menu_map_setup_form`).on("submit", function (e) {
@@ -126,121 +121,71 @@ function displayTable(menus) {
     
                 `).appendTo(tBody);
 
-    let statusButton = $(`.statusButton`, row);
-    statusButton.on("click", function () {
-      console.log(value.isActive);
-      $.ajax({
-        type: "POST",
-        url: "",
-        data: { isActive: value.isActive == "0" ? "1" : "0" },
-        success: function (response) {
-          console.log(value.isActive);
-        },
+    (function ($) {
+      $(`.statusButton`, row).on("click", function () {
+        console.log(value.isActive);
+        $.ajax({
+          type: "POST",
+          url: "",
+          data: { isActive: value.isActive == "0" ? "1" : "0" },
+          success: function (response) {
+            console.log(value.isActive);
+          },
+        });
       });
-    });
+    })(jQuery);
 
-    let editButton = $(`.editButton`, row);
-    editButton.on("click", function () {
-      // $(`#menu_map_setup_form`).empty();
-      console.log(value);
-      // $("#menu_map_setup_form")[0].reset();
+    (function ($) {
+      $(`.editButton`, row).on("click", function () {
+        console.log(value);
 
-      $(`#exampleModalCenter`).modal("show");
+        $(`#menu_map_setup_modal`).modal("show");
 
-      $(`.modal-title`).text("Update Menu");
+        $(`#menu_map_setup_modal .modal-title`).text("Update Menu");
 
-      $(`#menu_map_setup_form_menu_name_input`).val(value.menuName);
+        $(`#menu_map_setup_form_menu_name_input`).val(value.menuName);
 
-      $(`#menu_map_setup_form_menu_id_input`).val("");
-      $(`#menu_map_setup_form_page_url_input`).val(value.pageURL);
+        $(`#menu_map_setup_form_menu_id_input`).val(value.menuId);
+        $(`#menu_map_setup_form_page_url_input`).val(value.pageURL);
 
-      $(`#menu_map_setup_form_make_page_select`).val(value.makePageNo);
+        // $(`#menu_map_setup_form_parent_menu_select`).empty();
+        $(`#menu_map_setup_form_parent_menu_select`).val(
+          value.parentMenuTitle == null ? "" : value.parentMenuNo
+        );
+        $(`#menu_map_setup_form_make_page_select`).val(value.makePageNo);
 
-      $(`#menu_map_setup_form_for_lower_nav_select`).val(value.forLowerNavNo);
+        $(`#menu_map_setup_form_for_lower_nav_select`).val(value.forLowerNavNo);
 
-      $(`#menu_map_setup_form_is_external_link_select`).val(
-        value.isExternalLinkNo
-      );
-      // $(`#menu_map_setup_form_parent_menu_select`).empty();
-      console.log(value);
-      // $(`#menu_map_setup_form_parent_menu_select`).val(value.parentMenuTitle);
-      $(`.t`).remove();
-      $(`#menu_map_setup_form_parent_menu_select`).append(
-        `<option class="t" selected>${
-          value.parentMenuTitle == null ? "-" : value.parentMenuTitle
-        }</option>`
-      );
-      $(`#menu_map_setup_form_menu_submit_button`).text("Update Menu");
-    });
-
-    let deleteButton = $(`.deleteButton`, row);
-    deleteButton.on("click", function () {
-      $.ajax({
-        type: "DELETE",
-        url: "",
-        data: { menuNo: value.menuNo },
-        success: function (response) {
-          console.log("menuNo:", value.menuNo);
-        },
+        $(`#menu_map_setup_form_is_external_link_select`).val(
+          value.isExternalLinkNo
+        );
+        $(`#menu_map_setup_form_menu_submit_button`).text("Update Menu");
       });
-    });
+    })(jQuery);
 
-    // $.each(courseLebels, (index, singleCourseLebel) => {
-    //     if (singleCourseLebel.course_label_no == value.course_label_no) {
-    //         courseSelect.append(`
-    //     <option selected value="${singleCourseLebel.course_label_no}">${singleCourseLebel.course_label_title}</option>
-    //     `);
-    //     } else {
-    //         courseSelect.append(`
-    // <option value="${singleCourseLebel.course_label_no}">${singleCourseLebel.course_label_title}</option>
-    // `);
-    //     }
-    // });
+    (function ($) {
+      $(`.deleteButton`, row).on("click", function () {
+        $.ajax({
+          type: "DELETE",
+          url: "",
+          data: { menuNo: value.menuNo },
+          success: function (response) {
+            console.log("menuNo:", value.menuNo);
+          },
+        });
+      });
+    })(jQuery);
   });
-
-  // $(`#addMenu`).on("click", function () {
-  //   selectParentMenuDisplayInModal();
-  // });
-
-  // function selectParentMenuDisplayInModal() {
-  //   let menus = pageSettingsFunc("menuData");
-  //   console.log(menus);
-  //   let select = $(`#menu_map_setup_form_parent_menu_select`);
-  //   let nullParent = menus.filter((menu) => menu.parentMenuTitle == null);
-  //   console.log(nullParent);
-  //   $.each(nullParent, (index, value) => {
-  //     select.append(`
-  //           <option value="${value.menuNo}">${value.menu_map_setup_form_menu_name_input}</option>
-  //           `);
-  //   });
-  // }
-
-  // singleSave();
 }
 
 function showParentMenu(data) {
   // let menus = pageSettingsFunc("menuData");
 
-  let elseParentOptions = data.filter(
-    (menu) =>
-      // menu.parentMenuTitle != data.parentMenuTitle &&
-      menu.parentMenuTitle == null
+  $.each(data, (index, value) =>
+    value.parentMenuTitle == null
+      ? $(`#menu_map_setup_form_parent_menu_select`).append(`
+           <option value="${value.menuNo}">${value.menuName}</option>
+           `)
+      : ""
   );
-  // console.log(elseParentOptions);
-  $.each(elseParentOptions, (index, value) => {
-    $(`#menu_map_setup_form_parent_menu_select`).append(`
-        <option value="${value.menuNo}">${value.menuName}</option>
-        `);
-  });
-
-  $(`#menu_map_setup_form_make_page_select `).val(data.makePageNo);
-
-  $(`#menu_map_setup_form_for_lower_nav_select`).val(data.forLowerNavNo);
-
-  $(`#menu_map_setup_form_is_external_link_select`).val(
-    data.isExternalLinkTitle
-  );
-  //   $(`#menu_map_setup_form_menu_name_input`).val(
-  //     data.menu_map_setup_form_menu_name_input
-  //   );
 }

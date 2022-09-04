@@ -68,7 +68,7 @@
 
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal fade" id="menu_map_setup_modal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-lg" role="document">
             <div class="modal-content">
                 <form id="menu_map_setup_form">
@@ -109,7 +109,7 @@
                                         <label for="parentmenu">Parent Menu</label>
                                     </div>
                                     <select name="parentmenu" class="custom-select" id="menu_map_setup_form_parent_menu_select">
-                                        <option selected>Choose...</option>
+                                        <option value="">Choose...</option>
 
                                     </select>
                                 </div>
