@@ -27,9 +27,6 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-
-
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item" id="newsDropdownButton">
@@ -146,69 +143,72 @@
                                 Home
                             </a>
                         </li>
+
+
                         <li class="list-group-item d-flex justify-content-between align-items-center">
-                            <a class="nav-link" href="#" id="news-dropdown-pn" role="button" data-toggle="modal" data-target="#news-menu-pn" class="modal fade amk right from-right">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header d-flex justify-content-between">
-                                            <form class="d-flex justify-content-center align-items-center">
-                                                <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
-                                                <span>
-                                                    <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
-                                                </span>
-                                            </form>
-                                            <button type="button" class="close" data-dismiss="modal"><i class="fa-solid fa-xmark fa-2xl"></i></button>
+                            <a class="nav-link" href="#" id="news-dropdown-pn" role="button" data-toggle="modal" data-target="#news-menu-pn" class="modal fade amk right from-right"></a>
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header d-flex justify-content-between">
+                                        <form class="d-flex justify-content-center align-items-center">
+                                            <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                                            <span>
+                                                <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+                                            </span>
+                                        </form>
+                                        <button type="button" class="close" data-dismiss="modal"><i class="fa-solid fa-xmark fa-2xl"></i></button>
 
-                                        </div>
-                                        <div class="modal-body">
-                                            <ul class="list-group">
-                                                <li class="list-group-item">
-                                                    <h5>Press Products</h5>
-                                                    <a class="nav-link" href="#" role="button">Today in DOD</a>
-                                                    <a class="nav-link" href="#" role="button">Live Events</a>
-                                                    <a class="nav-link" href="#" role="button">Releases</a>
-                                                    <a class="nav-link" href="#" role="button">Advisories</a>
-                                                    <a class="nav-link" href="#" role="button">Transcripts</a>
-                                                    <a class="nav-link" href="#" role="button">Speeches</a>
-                                                    <a class="nav-link" href="#" role="button">Publications</a>
-                                                    <a class="nav-link" href="#" role="button">Contracts</a>
-                                                </li>
-                                                <li class="list-group-item">
-                                                    <h5>Newsroom</h5>
-                                                    <a class="nav-link" href="#" role="button">News Stories</a>
-                                                    <a class="nav-link" href="#" role="button">Feature Stories</a>
-                                                    <a class="nav-link" href="#" role="button">Stories from the Services</a>
-                                                </li>
-                                                <li class="list-group-item">
-                                                    <h5>Multimedia</h5>
-                                                    <a class="nav-link" href="#" role="button">Photos</a>
-                                                    <a class="nav-link" href="#" role="button">Videos</a>
-                                                    <a class="nav-link" href="#" role="button">Interactive Experiences</a>
-                                                </li>
-                                                <li class="list-group-item">
-                                                    <div class="d-flex justify-content-between px-3">
-                                                        <a class="nav-link h3" href="#">
-                                                            <i class="fa-brands fa-twitter fa-sm"></i>
-                                                        </a>
-                                                        <a class="nav-link h3" href="#">
-                                                            <i class="fa-brands fa-facebook-f fa-sm"></i>
-                                                        </a>
-                                                        <a class="nav-link h3" href="#">
-                                                            <i class="fa-brands fa-instagram fa-sm"></i>
-                                                        </a>
-                                                        <a class="nav-link h3" href="#">
-                                                            <i class="fa-brands fa-linkedin-in fa-sm"></i>
-                                                        </a>
-                                                        <a class="nav-link h3" href="#">
-                                                            <i class="fa-brands fa-youtube fa-sm"></i>
-                                                        </a>
-                                                    </div>
-                                                </li>
-                                            </ul>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <h5>Press Products</h5>
+                                                <a class="nav-link" href="#" role="button">Today in DOD</a>
+                                                <a class="nav-link" href="#" role="button">Live Events</a>
+                                                <a class="nav-link" href="#" role="button">Releases</a>
+                                                <a class="nav-link" href="#" role="button">Advisories</a>
+                                                <a class="nav-link" href="#" role="button">Transcripts</a>
+                                                <a class="nav-link" href="#" role="button">Speeches</a>
+                                                <a class="nav-link" href="#" role="button">Publications</a>
+                                                <a class="nav-link" href="#" role="button">Contracts</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <h5>Newsroom</h5>
+                                                <a class="nav-link" href="#" role="button">News Stories</a>
+                                                <a class="nav-link" href="#" role="button">Feature Stories</a>
+                                                <a class="nav-link" href="#" role="button">Stories from the Services</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <h5>Multimedia</h5>
+                                                <a class="nav-link" href="#" role="button">Photos</a>
+                                                <a class="nav-link" href="#" role="button">Videos</a>
+                                                <a class="nav-link" href="#" role="button">Interactive Experiences</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="d-flex justify-content-between px-3">
+                                                    <a class="nav-link h3" href="#">
+                                                        <i class="fa-brands fa-twitter fa-sm"></i>
+                                                    </a>
+                                                    <a class="nav-link h3" href="#">
+                                                        <i class="fa-brands fa-facebook-f fa-sm"></i>
+                                                    </a>
+                                                    <a class="nav-link h3" href="#">
+                                                        <i class="fa-brands fa-instagram fa-sm"></i>
+                                                    </a>
+                                                    <a class="nav-link h3" href="#">
+                                                        <i class="fa-brands fa-linkedin-in fa-sm"></i>
+                                                    </a>
+                                                    <a class="nav-link h3" href="#">
+                                                        <i class="fa-brands fa-youtube fa-sm"></i>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        </ul>
 
-                                        </div>
                                     </div>
                                 </div>
+                            </div>
+                        </li>
                 </div>
 
 

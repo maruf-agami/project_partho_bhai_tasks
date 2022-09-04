@@ -36,7 +36,7 @@
             </div>
             <div class="card-body">
                 <div class="my-3 d-flex justify-content-end">
-                    <button type="button" class="btn btn-primary" id="addMenu" data-toggle="modal" data-target="#exampleModalCenter">Add</button>
+                    <button type="button" class="btn btn-primary" id="addMenu">Add</button>
                 </div>
                 <div class="table-responsive">
                     <table class="table table-sm table-bordered table-hover table-striped">
@@ -68,8 +68,8 @@
             <div class="modal-content">
                 <form id="menu_map_setup_form">
                     <div class="modal-header">
-                        <h5 class="modal-title">Add Menu Map</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <h5 class="modal-title"></h5>
+                        <button type="button" class="close" id="modal_close_button" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
@@ -79,14 +79,14 @@
                                 <div class="col-sm">
                                     <label for="menuname">Menu Name</label>
                                     <div class="input-group">
-                                        <input name="menuname" type="text" class="form-control" id="menuname" aria-describedby="basic-addon3">
+                                        <input name="menuname" type="text" class="form-control" id="menu_map_setup_form_menu_name_input" aria-describedby="basic-addon3">
                                     </div>
                                 </div>
 
                                 <div class="col-sm">
                                     <label for="menuid">Menu ID</label>
                                     <div class="input-group">
-                                        <input name="menuid" type="text" class="form-control" id="menuid" aria-describedby="basic-addon3">
+                                        <input name="menuid" type="text" class="form-control" id="menu_map_setup_form_menu_id_input" aria-describedby="basic-addon3">
                                     </div>
                                 </div>
                             </div>
@@ -94,7 +94,7 @@
                                 <div class="col-sm">
                                     <label for="pageurl">Page URL</label>
                                     <div class="input-group">
-                                        <input name="pageurl" type="text" class="form-control" id="pageurl" aria-describedby="basic-addon3">
+                                        <input name="pageurl" type="text" class="form-control" id="menu_map_setup_form_page_url_input" aria-describedby="basic-addon3">
                                     </div>
                                 </div>
                             </div>
@@ -103,7 +103,7 @@
                                     <div class="input-group-prepend">
                                         <label for="parentmenu">Parent Menu</label>
                                     </div>
-                                    <select name="parentmenu" class="custom-select" id="parentmenu">
+                                    <select name="parentmenu" class="custom-select" id="menu_map_setup_form_parent_menu_select">
                                         <option selected>Choose...</option>
 
                                     </select>
@@ -112,10 +112,10 @@
                                     <div class="input-group-prepend">
                                         <label for="makepage">Make Page</label>
                                     </div>
-                                    <select name="makepage" class="custom-select" id="makepage">
+                                    <select name="makepage" class="custom-select" id="menu_map_setup_form_make_page_select">
                                         <option selected>Choose...</option>
+                                        <option value="0">No</option>
                                         <option value="1">Yes</option>
-                                        <option value="2">No</option>
 
                                     </select>
                                 </div>
@@ -135,10 +135,10 @@
                                     <div class="input-group-prepend">
                                         <label for="forlowernav">For Lower Nav</label>
                                     </div>
-                                    <select name="forlowernav" class="custom-select" id="forlowernav">
+                                    <select name="forlowernav" class="custom-select" id="menu_map_setup_form_for_lower_nav_select">
                                         <option selected>Choose...</option>
+                                        <option value="0">No</option>
                                         <option value="1">Yes</option>
-                                        <option value="2">No</option>
 
                                     </select>
                                 </div>
@@ -146,10 +146,10 @@
                                     <div class="input-group-prepend">
                                         <label for="isexternallink">Is External Link</label>
                                     </div>
-                                    <select name="isexternallink" class="custom-select" id="isexternallink">
+                                    <select name="isexternallink" class="custom-select" id="menu_map_setup_form_is_external_link_select">
                                         <option selected>Choose...</option>
+                                        <option value="0">No</option>
                                         <option value="1">Yes</option>
-                                        <option value="2">No</option>
                                     </select>
                                 </div>
                             </div>
@@ -157,7 +157,7 @@
                     </div>
                     <div class="modal-footer">
                         <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-                        <button type="submit" id="menuSubmit" class="btn btn-primary">Make Menu</button>
+                        <button type="submit" id="menu_map_setup_form_menu_submit_button" class="btn btn-primary"></button>
                     </div>
                 </form>
             </div>

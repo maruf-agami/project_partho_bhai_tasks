@@ -1,22 +1,35 @@
 [
+
     {
-        "title":"Go",
+        "title":"Home",
         "no":1
     },
     {
-        "title":"File",
+        "title":"About Us",
         "no":2
     },
     {
-        "title":"Help",
+        "title":"Academics",
         "no":3
     },
     {
-        "title":"Run",
+        "title":"Admission",
         "no":4
     },
     {
-        "title":"Edit",
+        "title":"Teacher & Staff",
         "no":5
+    },
+    {
+        "title":"Activities",
+        "no":6
+    },
+    {
+        "title":"Modules Login",
+        "no":7
+    },
+    {
+        "title":"Alumni",
+        "no":8
     }
 ]
