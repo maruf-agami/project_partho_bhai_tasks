@@ -1,13 +1,13 @@
-var pageSettings = {};
-function pageSettingsFunc(key = "", value) {
-  if (!pageSettings) {
-    pageSettings = {};
-  }
-  if (value) {
-    pageSettings[key] = value;
-  }
-  return pageSettings.hasOwnProperty(key) ? pageSettings[key] : undefined;
-}
+// var pageSettings = {};
+// function pageSettingsFunc(key = "", value) {
+//   if (!pageSettings) {
+//     pageSettings = {};
+//   }
+//   if (value) {
+//     pageSettings[key] = value;
+//   }
+//   return pageSettings.hasOwnProperty(key) ? pageSettings[key] : undefined;
+// }
 
 // var courseLabels;
 function getMenuData() {
@@ -41,21 +41,33 @@ menuDataPromise
   });
 
 $(`#addMenu`).on("click", function () {
+
   $("#menu_map_setup_form")[0].reset();
+
   $(`#menu_map_setup_modal`).modal("show");
+
   $(`#menu_map_setup_modal .modal-title`).text("Add Menu");
+
   $(`#menu_map_setup_form_menu_submit_button`).text("Create Menu");
+
 });
 
 $(`#menu_map_setup_form`).on("submit", function (e) {
+
   e.preventDefault();
+
   makeMenu();
+
 });
 
 function makeMenu() {
+
   let json = Object.fromEntries(
+
     new FormData($(`#menu_map_setup_form`)[0]).entries()
+
   );
+
   $.ajax({
     type: "POST",
     url: "",
@@ -64,12 +76,17 @@ function makeMenu() {
       console.log(json);
     },
   });
+
 }
 
 $(`#menu_map_setup_form_menu_name_input`).on("blur", function (e) {
+
   let str = e.target.value;
+
   let nameid = str.replaceAll(" ", "_");
+
   $(`#menu_map_setup_form_menu_id_input`).val(nameid);
+
 });
 
 function displayTable(menus) {
@@ -78,6 +95,7 @@ function displayTable(menus) {
   // console.log(menus);
   let tBody = $(`#table-body`);
   $.each(menus, (index, value) => {
+
     let row = $(`
                   <tr class="table-${
                     value.isActive == 0 ? "danger" : "success"
@@ -124,6 +142,7 @@ function displayTable(menus) {
                 `).appendTo(tBody);
 
     (function ($) {
+
       $(`.statusButton`, row).on("click", function () {
         console.log(value.isActive);
         $.ajax({
@@ -135,9 +154,11 @@ function displayTable(menus) {
           },
         });
       });
+
     })(jQuery);
 
     (function ($) {
+
       $(`.editButton`, row).on("click", function () {
         console.log(value);
 
@@ -148,12 +169,13 @@ function displayTable(menus) {
         $(`#menu_map_setup_form_menu_name_input`).val(value.menuName);
 
         $(`#menu_map_setup_form_menu_id_input`).val(value.menuId);
+
         $(`#menu_map_setup_form_page_url_input`).val(value.pageURL);
 
-        // $(`#menu_map_setup_form_parent_menu_select`).empty();
         $(`#menu_map_setup_form_parent_menu_select`).val(
           value.parentMenuNo == null ? "" : value.parentMenuNo
         );
+
         $(`#menu_map_setup_form_make_page_select`).val(value.makePageNo);
 
         $(`#menu_map_setup_form_for_lower_nav_select`).val(value.forLowerNavNo);
@@ -161,11 +183,15 @@ function displayTable(menus) {
         $(`#menu_map_setup_form_is_external_link_select`).val(
           value.isExternalLinkNo
         );
+
         $(`#menu_map_setup_form_menu_submit_button`).text("Update Menu");
+
       });
+
     })(jQuery);
 
     (function ($) {
+
       $(`.deleteButton`, row).on("click", function () {
         $.ajax({
           type: "DELETE",
@@ -176,6 +202,7 @@ function displayTable(menus) {
           },
         });
       });
+      
     })(jQuery);
   });
 }
