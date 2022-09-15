@@ -1,25 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!-- Required meta tags -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-<!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS, then Font Awesome -->
-    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/b9e84834a9.js" crossorigin="anonymous"></script>
-
-    <title>University of Pennsylvania</title>
 </head>
+
 <body>
-    <div><h1>this is nav</h1></div>
+  <div style="width:80%;margin-right:auto;margin-left:auto">
+    <div class="row h-25 m-0">
+      <div class="col-3 p-0">
+        <img class="img-fluid" src="Assets/nav-logo.png" alt="nav-logo">
+      </div>
+      <div class="col-9 p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark p-0"
+          style="border: none; border-bottom: 1px solid white;">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown p-3">
+
+                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown"
+                  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  RESOURCES
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+
+              </li>
+              <li class="nav-item p-3 bg-danger">
+                <a class="nav-link active" href="#">GIVE TO PENN</a>
+              </li>
+
+
+
+
+            </ul>
+          </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown mr-2">
+
+                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown"
+                  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  ACADEMICS
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+
+              </li>
+              <li class="nav-item mr-2">
+                <a class="nav-link active" href="#">ADMISSION & AID</a>
+              </li>
+              <li class="nav-item active mr-2">
+                <a class="nav-link" href="#">ATHLETICS</a>
+              </li>
+
+              <li class="nav-item dropdown mr-2">
+
+                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown"
+                  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  RESEARCH & INNOVATION
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+
+              </li>
+              <li class="nav-item dropdown mr-2">
+
+                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown"
+                  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  LIFE AT PENN
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+
+              </li>
+
+              <li class="nav-item dropdown mr-2">
+
+                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown"
+                  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  ABOUT
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 p-0"></div>
+      <div class="col-6 p-0 h-100" style="margin-top:150px">
+        <h5 class="text-light">CAMPUS & COMMUNITY</h5>
+        <h2 class="text-light">A decade of advancing working dogs for <br> the greater good</h2>
+        <p class="text-light">
+          Inspired by her experience caring for working dogs following 9/11 at Ground Zero, Penn Vet
+          Working Dog Center Director Cynthia Otto’s initial vision has grown into a thriving
+          organization with a mission to use science to improve the breeding, training, care, and
+          effectiveness of working dogs.</p>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>

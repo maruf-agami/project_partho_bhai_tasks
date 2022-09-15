@@ -1,0 +1,14 @@
+#nav_container_div{
+    height: 570px;
+    background-image: url("Assets/nav-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#news_container_div{
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* .news-topics-dropdown {
+    background-color: none !important;
+} */
