@@ -33,10 +33,9 @@
     <!-- <div id="news_container_div">
         <?php include_once dirname(__FILE__)."/news.php";?>
     </div> -->
-    <div id="pen_priorities_container_div">
+    <div id="">
         <?php include_once dirname(__FILE__)."/pennPriorities.php";?>
     </div>
-
 
 </body>
 
