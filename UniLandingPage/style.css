@@ -9,6 +9,151 @@
     margin-right: auto;
     margin-left: auto;
 }
-/* .news-topics-dropdown {
-    background-color: none !important;
+
+
+
+/* penn priorities styles ----------- */
+/* @media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+    transform: translateX(0);
 } */
+
+
+
+
+
+
+
+
+
+/* .carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+.carousel-inner .carousel-item-right.active,
+.carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+}
+
+.carousel-inner .carousel-item-left.active,
+.carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left {
+    transform: translateX(0);
+
+}
+
+.carousel-indicators li {
+    border-radius: 50%;
+    height: 30px!important;
+    background-color: brown !important;
+}
+
+.carousel-indicators{
+    bottom: -80px !important;
+}
+
+.carousel-prev-icon-container,
+.carousel-next-icon-container{
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+
+.carousel{
+    position: relative;
+    height: 500px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.carousel__image{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+
+.carousel__track-container{
+    background: lightgreen;
+    height: 100%;
+    position: relative;
+}
+
+.carousel__track{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+
+.carousel__slide{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel__button{
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border:0;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.carousel__button--left{
+    left: -40px;
+}
+
+.carousel__button--right{
+    right: -40px;
+}
+
+.carousel__nav{
+    background: pink;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carousel__indicator{
+    border:0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: rgba(0, 0, 0, 0.418);
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.carousel__indicator.current-slide{
+    background: rgba(0, 0, 0, 0.726);
+}
