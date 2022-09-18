@@ -37,6 +37,10 @@
         <?php include_once dirname(__FILE__)."/pennPriorities.php";?>
     </div>
 
+    <section id="stay_connected">
+        <?php include_once dirname(__FILE__)."/stayConnected.php";?>
+    </section>
+
 </body>
 
 </html>
