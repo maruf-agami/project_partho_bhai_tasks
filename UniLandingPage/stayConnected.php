@@ -5,7 +5,7 @@
 </head>
 
 <body>
-    <div class="h-100">
+    <div class="">
         <div class="text-center mb-5">
             <h2>Stay Connected</h2>
         </div>
@@ -60,7 +60,7 @@
                 </div>
             </div>
         </div>
-        <div class="d-flex justify-content-center mt-5">
+        <div class="d-flex justify-content-center my-5">
             <h5><i class="fab fa-instagram  p-3 bg-light text-dark rounded-circle mr-3"></i></h5>
             <h5><i class="fab fa-facebook  p-3 bg-light text-dark rounded-circle mr-3"></i></h5>
             <h5><i class="fab fa-twitter  p-3 bg-light text-dark rounded-circle mr-3"></i></h5>

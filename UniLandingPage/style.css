@@ -111,15 +111,15 @@
 
 /*-- overlay text effect 2 --*/
 
-.effect-image-2{
-    background-color: #011F5B;
+.effect-image-2 {
+    background-color: #011f5b;
     height: 100%;
     display: flex;
     justify-content: start;
     align-items: center;
     padding: 30px;
 }
-.effect-image-2 p{
+.effect-image-2 p {
     color: white;
 }
 
@@ -147,3 +147,74 @@
 }
 
 /* overlay effect ----------------------*/
+
+/* =========================================== */
+#penn_opportunity {
+    height: 500px;
+    background-color: #011f5b;
+}
+
+#penn_opportunity a {
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 12px;
+    font-weight: bold !important;
+    text-transform: uppercase;
+}
+#penn_opportunity a:hover {
+    color: #011f5b !important;
+    font-weight: bold !important;
+}
+
+/* =========================================== */
+/* background overlay css */
+.test {
+    position: relative;
+    width: 100%;
+    /* height: 20em; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image {
+    width: 100%;
+    height: 80vh;
+  }
+  
+  .test:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    /* height: 20em; */
+    background: #011f5bbd;
+    background-size: cover;
+    background-position: center center;
+  }
+  .text {
+    font-family: Arial;
+    font-size: 2em;
+    color: white;
+    text-shadow: 0.1em 0.1em 0.5em rgba(0,0,0,0.5);
+    margin: 0;
+    position: absolute;
+  }
+/* background overlay css */
+
+.footer_inner_div{
+    padding: 150px;
+}
+.footer__list{
+    padding: 0;
+}
+.footer__item{
+    list-style: none;
+    color: white;
+    /* color: rgba(63, 15, 145, 0.459); */
+    margin-bottom: 10px;
+}

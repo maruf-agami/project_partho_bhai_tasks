@@ -40,6 +40,12 @@
     <section id="stay_connected">
         <?php include_once dirname(__FILE__)."/stayConnected.php";?>
     </section>
+    <div>
+        <?php include_once dirname(__FILE__)."/pennOpportunity.php";?>
+    </div>
+    <div>
+        <?php include_once dirname(__FILE__)."/footer.php";?>
+    </div>
 
 </body>
 
