@@ -1,5 +1,5 @@
 #nav_container_div {
-    height: 750px;
+    height: 60vh;
     background-image: url("Assets/nav-bg.png");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -171,18 +171,18 @@
 .test {
     position: relative;
     width: 100%;
-    /* height: 20em; */
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .image {
+}
+
+.image {
     width: 100%;
-    height: 80vh;
-  }
-  
-  .test:before {
+    height: 100%;
+}
+
+.test:before {
     content: "";
     display: block;
     position: absolute;
@@ -195,26 +195,88 @@
     background: #011f5bbd;
     background-size: cover;
     background-position: center center;
-  }
-  .text {
+}
+.text {
     font-family: Arial;
     font-size: 2em;
     color: white;
-    text-shadow: 0.1em 0.1em 0.5em rgba(0,0,0,0.5);
-    margin: 0;
-    position: absolute;
-  }
+    /* text-shadow: 0.1em 0.1em 0.5em rgba(0, 0, 0, 0.10); */
+    /* margin10 0; */
+    position: 10absolute;
+}
 /* background overlay css */
 
-.footer_inner_div{
-    padding: 150px;
+.footer_inner_div {
+    height: 90%;
 }
-.footer__list{
+.footer__list {
     padding: 0;
 }
-.footer__item{
+.footer__item {
     list-style: none;
-    color: white;
+    /* color: white; */
     /* color: rgba(63, 15, 145, 0.459); */
     margin-bottom: 10px;
+}
+.footer__item a {
+    color: white;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+.footer__item a:hover {
+    color: white;
+}
+.footer__section__title {
+    font-size: 20px;
+    color: white;
+}
+
+.footer__section .history-button {
+    border-radius: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+.footer__section .history-button:hover {
+    color: #011f5b;
+}
+
+.footer__list--full .footer__item-left-border {
+    list-style: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.304);
+    padding-right: 15px;
+}
+.footer__item-left-border.last {
+    border-right: 0;
+}
+.footer__item-left-border a {
+    color: white;
+    text-transform: uppercase;
+}
+
+.footer__item-left-border a:hover {
+    color: white;
+}
+
+.arrow {
+    color: white !important;
+    /* padding: 15px !important; */
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    font-size: 20px !important;
+    border-radius: 0 !important;
+}
+.footer__to-top:hover .arrow {
+    background-color: rgba(255, 255, 255, 0.415);
+}
+
+.footer__to-top__text {
+    color: white;
+    text-transform: uppercase;
 }

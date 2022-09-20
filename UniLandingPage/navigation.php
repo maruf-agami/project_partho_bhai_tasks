@@ -40,10 +40,6 @@
               <li class="nav-item p-3 bg-danger">
                 <a class="nav-link active" href="#">GIVE TO PENN</a>
               </li>
-
-
-
-
             </ul>
           </div>
         </nav>
@@ -128,7 +124,7 @@
     </div>
     <div class="row">
       <div class="col-6 p-0"></div>
-      <div class="col-6 p-0 h-100" style="margin-top:150px">
+      <div class="col-6 p-0" style="margin-top:150px">
         <h5 class="text-light">CAMPUS & COMMUNITY</h5>
         <h2 class="text-light">A decade of advancing working dogs for <br> the greater good</h2>
         <p class="text-light">
