@@ -11,12 +11,12 @@
     <link rel="shortcut icon" href="Assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <!-- <style>
-        /* <?php include_once dirname(dirname(dirname(__FILE__)))."/dipnibas/CSS/main.css";?>
+        /* <?php include_once dirname(dirname(dirname(__FILE__))) . "/dipnibas/CSS/main.css"; ?>
     */
     </style> -->
 
     <!-- Optional JavaScript -->
-    <?php include_once dirname(dirname(dirname(__FILE__)))."/dipnibas/shared/layout/header.php";?>
+    <?php include_once dirname(dirname(dirname(__FILE__))) . "/dipnibas/shared/layout/header.php"; ?>
     <script>
         $(`title`).text("University of Pennsylvania");
     </script>
@@ -28,23 +28,26 @@
 
 <body>
     <div id="nav_container_div">
-        <?php include_once dirname(__FILE__)."/navigation.php";?>
+        <?php include_once dirname(__FILE__) . "/navigation.php"; ?>
     </div>
     <!-- <div id="news_container_div">
-        <?php include_once dirname(__FILE__)."/news.php";?>
+        <?php include_once dirname(__FILE__) . "/news.php"; ?>
     </div> -->
     <div id="">
-        <?php include_once dirname(__FILE__)."/pennPriorities.php";?>
+        <?php include_once dirname(__FILE__) . "/pennPriorities.php"; ?>
     </div>
 
     <section id="stay_connected">
-        <?php include_once dirname(__FILE__)."/stayConnected.php";?>
+        <?php include_once dirname(__FILE__) . "/stayConnected.php"; ?>
     </section>
     <div>
-        <?php include_once dirname(__FILE__)."/pennOpportunity.php";?>
+        <?php include_once dirname(__FILE__) . "/ppp.php"; ?>
     </div>
     <div>
-        <?php include_once dirname(__FILE__)."/footer.php";?>
+        <?php include_once dirname(__FILE__) . "/pennOpportunity.php"; ?>
+    </div>
+    <div>
+        <?php include_once dirname(__FILE__) . "/footer.php"; ?>
     </div>
 
 </body>

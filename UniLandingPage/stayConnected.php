@@ -6,20 +6,21 @@
 
 <body>
     <div class="">
-        <div class="text-center mb-5">
-            <h2>Stay Connected</h2>
+        <div class="text-center  d-flex flex-column justify-content-center align-items-center mb-5">
+            <!-- <h2 class="header-bottom-border"></h2> -->
+            <div class="h1 header-bottom-border blue mb-5">
+                Stay Connected
+            </div>
         </div>
         <div class="simple-effet-image clearfix row">
             <div class="col-4">
                 <div class="effect-image-1">
-                    <img src="https://www.upenn.edu/sites/default/files/styles/social_card_1x1/public/2022-09/2026_class_photo-sq.png?itok=JpBICdnl"
-                        alt="image-1">
+                    <img src="https://www.upenn.edu/sites/default/files/styles/social_card_1x1/public/2022-09/2026_class_photo-sq.png?itok=JpBICdnl" alt="image-1">
                     <div class="overlay-sim-text-2 overlay-xs-1">
                         <div class="hover-text">
                             <p>Welcome home, #Penn2026!</p>
                             <p>
-                                <i
-                                    class="fab fa-instagram p-2 bg-light text-dark rounded-circle"></i>
+                                <i class="fab fa-instagram p-2 bg-light text-dark rounded-circle"></i>
                                 @UOFPENN
                             </p>
                         </div>
@@ -42,8 +43,7 @@
             </div>
             <div class="col-4">
                 <div class="effect-image-1">
-                    <img src="https://www.upenn.edu/sites/default/files/styles/social_card_1x1/public/2022-09/26_for_the_class_of_2026-sq.png?itok=8F52DfJR"
-                        alt="image-1">
+                    <img src="https://www.upenn.edu/sites/default/files/styles/social_card_1x1/public/2022-09/26_for_the_class_of_2026-sq.png?itok=8F52DfJR" alt="image-1">
                     <div class="overlay-sim-text-2 overlay-xs-1">
                         <div class="hover-text">
                             <p>Here’s the list of 26 for the Class of 2026 gathered from students by
@@ -51,8 +51,7 @@
                                 There are many more wonderful things to see on campus and around
                                 town. #Penn2026</p>
                             <p>
-                                <i
-                                    class="fab fa-instagram p-2 bg-light text-dark rounded-circle"></i>
+                                <i class="fab fa-instagram p-2 bg-light text-dark rounded-circle"></i>
                                 @UOFPENN
                             </p>
                         </div>
