@@ -79,8 +79,24 @@
         }
 
         .card-div {
-            height:100vh;
+
+
+            height: 100vh;
             background-color: #F2F2F2;
+        }
+
+        .card-div>.row {
+            max-width: 90%;
+        }
+        .more-about{
+            max-width:85%;
+        }
+
+        .content-gallery__column{
+            min-width: 45%;
+        }
+        .gallery-card__text{
+            max-width:8  0%
         }
 
         @media only screen and (max-width:576px) {}
@@ -226,7 +242,7 @@
         </div>
     </div>
     <div class="card-div d-flex align-items-center">
-        <div class="row m-0">
+        <div class="row mx-auto">
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="card" style="width:100%; min-height:510px;">
                     <img class="card-img-top" src="Assets/about-card-1.jpg" alt="Card image cap">
@@ -265,6 +281,61 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="more-about d-flex justify-content-between mx-auto">
+        <div class="content-gallery__column">
+            <div class="gallery-slider">
+                <div class="gallery">
+                    <div class="gallery-card">
+                        <img src="Assets/more-about.jpg" class="img-fluid"
+                            alt="Students celebrating Hey Day in front of the campus LOVE statue"
+                            typeof="foaf:Image" class="gallery-card__image">
+                        <div class="gallery-card__controls">
+                            <p class="gallery-card__text">
+                                Members of the junior class celebrating Hey Day, the day they become
+                                seniors, on College Green.
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="gallery__navigation">
+                    <div class="gallery__arrows"></div>
+                    <div class="gallery__dots"></div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="content-gallery__column">
+            <div class="text-cta">
+
+                <h2 class="text-cta__title ">More About Penn</h2>
+
+            </div>
+            <div class="link-list">
+                <h3 class="link-list__title">
+                    Explore
+                </h3>
+                <ul class="link-list__list">
+                    <li class="link-list__item">
+                        <a href="/about/facts" class="link-list__link">Facts</a>
+                    </li>
+                    <li class="link-list__item">
+                        <a href="/about/policies" class="link-list__link">Policies</a>
+                    </li>
+                    <li class="link-list__item">
+                        <a href="/about/communications" class="link-list__link">News, Media, &amp;
+                            Communications Services</a>
+                    </li>
+
+                </ul>
+            </div>
+
         </div>
     </div>
 </body>
