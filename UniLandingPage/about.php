@@ -17,6 +17,12 @@
         */
         </style> -->
 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+
+
+
         <!-- Optional JavaScript -->
         <?php include_once dirname(dirname(dirname(__FILE__))) . "/dipnibas/shared/layout/header.php"; ?>
         <script>
@@ -81,23 +87,53 @@
         .card-div {
 
 
-            height: 100vh;
+            height: auto;
             background-color: #F2F2F2;
         }
 
         .card-div>.row {
             max-width: 90%;
         }
-        .more-about{
-            max-width:85%;
+
+        .more-about {
+            max-width: 85%;
         }
 
-        .content-gallery__column{
-            min-width: 45%;
+        .content-gallery__column {
+            width: 40%;
+            /* max-width: 40%; */
         }
-        .gallery-card__text{
-            max-width:8  0%
+
+        .gallery-card__text {
+            max-width: 8 0%
         }
+
+        .text-cta__title {
+            margin-bottom: 25px;
+        }
+
+        .link-list__title {
+            font-size: 12px;
+
+        }
+
+        .link-list__list {
+            padding-left: 0;
+        }
+
+        .link-list__item {
+
+            /* border-bottom: 1px solid black; */
+            padding: 20px 0;
+            list-style: none;
+        }
+
+        /* .penn-global {
+            background-color: #F2F2F2;
+        } */
+
+
+
 
         @media only screen and (max-width:576px) {}
 
@@ -129,12 +165,21 @@
             .intro-div {
                 width: 100%;
             }
+
+            /* .content-gallery__column {
+                max-width: 40%;
+            } */
         }
 
         @media only screen and (max-width:1200px) {
             .container-div {
+
                 /* width: 75%; */
             }
+
+            /* .content-gallery__column {
+                max-width: 45%;
+            } */
         }
 
         /* @media only screen and (max-width:1500px) {
@@ -284,60 +329,72 @@
         </div>
     </div>
 
-    <div class="more-about d-flex justify-content-between mx-auto">
-        <div class="content-gallery__column">
-            <div class="gallery-slider">
-                <div class="gallery">
-                    <div class="gallery-card">
-                        <img src="Assets/more-about.jpg" class="img-fluid"
-                            alt="Students celebrating Hey Day in front of the campus LOVE statue"
-                            typeof="foaf:Image" class="gallery-card__image">
-                        <div class="gallery-card__controls">
-                            <p class="gallery-card__text">
-                                Members of the junior class celebrating Hey Day, the day they become
-                                seniors, on College Green.
-                            </p>
+    <div class="more-about row justify-content-between mx-auto my-5">
+        <div class="content-gallery__column col-md-6 col-sm-12 p-0 d-flex justify-content-center">
+            <div class="col-11">
+                <div class="gallery-slider">
+                    <div class="gallery">
+                        <div class="gallery-card">
+                            <img src="Assets/more-about.jpg" class="w-100 h-auto" alt="Students celebrating Hey Day in front of the campus LOVE statue" class="gallery-card__image">
+                            <div class="gallery-card__controls">
+                                <p class="gallery-card__text w-75 mt-4">
+                                    Members of the junior class celebrating Hey Day, the day they become
+                                    seniors, on College Green.
+                                </p>
 
+                            </div>
                         </div>
-                    </div>
 
-                </div>
-                <div class="gallery__navigation">
-                    <div class="gallery__arrows"></div>
-                    <div class="gallery__dots"></div>
+                    </div>
+                    <div class="gallery__navigation">
+                        <div class="gallery__arrows"></div>
+                        <div class="gallery__dots"></div>
+                    </div>
                 </div>
             </div>
 
 
         </div>
+        <!-- <div class="col-lg-2 d-none d-lg-block"></div> -->
 
-        <div class="content-gallery__column">
-            <div class="text-cta">
+        <div class="content-gallery__column col-md-6 col-sm-12 p-0 d-flex justify-content-center">
+            <div class="col-11">
+                <div class="text-cta">
 
-                <h2 class="text-cta__title ">More About Penn</h2>
+                    <h2 class="text-cta__title blue-font ">More About Penn</h2>
 
-            </div>
-            <div class="link-list">
-                <h3 class="link-list__title">
-                    Explore
-                </h3>
-                <ul class="link-list__list">
-                    <li class="link-list__item">
-                        <a href="/about/facts" class="link-list__link">Facts</a>
-                    </li>
-                    <li class="link-list__item">
-                        <a href="/about/policies" class="link-list__link">Policies</a>
-                    </li>
-                    <li class="link-list__item">
-                        <a href="/about/communications" class="link-list__link">News, Media, &amp;
-                            Communications Services</a>
-                    </li>
+                </div>
+                <div class="link-list">
+                    <h3 class="link-list__title blue-font">
+                        EXPROLE
+                    </h3>
+                    <ul class="link-list__list">
+                        <li class="link-list__item border-bottom">
+                            <a href="#" class="link-list__link blue-font">Facts</a>
+                        </li>
+                        <li class="link-list__item border-bottom">
+                            <a href="#" class="link-list__link blue-font">Policies</a>
+                        </li>
+                        <li class="link-list__item">
+                            <a href="#" class="link-list__link blue-font">News, Media, &amp;
+                                Communications Services</a>
+                        </li>
 
-                </ul>
+                    </ul>
+                </div>
             </div>
 
         </div>
     </div>
+
+    <div class="penn-global my-5 mx-auto">
+        <?php include_once dirname(__FILE__) . "/accordion.php" ?>
+    </div>
+
+
+
+
+
 </body>
 
 </html>
