@@ -1,3 +1,6 @@
+.blue-font{
+    color: #011f5b;
+}
 .header-bottom-border{
     position: relative;
 
@@ -17,7 +20,7 @@
     height: 4px;
 }
 
-#nav_container_div {
+#home-top-div {
     height: 60vh;
     background-image: url("Assets/nav-bg.png");
     background-repeat: no-repeat;

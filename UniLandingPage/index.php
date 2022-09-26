@@ -27,8 +27,26 @@
 </head>
 
 <body>
-    <div id="nav_container_div">
+    <div id="nav_container_div" class="position-absolute w-100 bg-light">
         <?php include_once dirname(__FILE__) . "/navigation.php"; ?>
+    </div>
+    <div id="home-top-div">
+        <div class="row">
+            <div class="col-6 p-0"></div>
+            <div class="col-6 p-0" style="margin-top:150px">
+                <h5 class="text-light">CAMPUS & COMMUNITY</h5>
+                <h2 class="text-light">A decade of advancing working dogs for <br> the greater good
+                </h2>
+                <p class="text-light">
+                    Inspired by her experience caring for working dogs following 9/11 at Ground
+                    Zero, Penn Vet
+                    Working Dog Center Director Cynthia Otto’s initial vision has grown into a
+                    thriving
+                    organization with a mission to use science to improve the breeding, training,
+                    care, and
+                    effectiveness of working dogs.</p>
+            </div>
+        </div>
     </div>
     <!-- <div id="news_container_div">
         <?php include_once dirname(__FILE__) . "/news.php"; ?>

@@ -191,6 +191,9 @@
 </head>
 
 <body>
+<div id="nav_container_div" class="bg-light">
+        <?php include_once dirname(__FILE__) . "/navigation.php"; ?>
+    </div>
     <header class="mt-4 container-div mx-auto p-0">
         <div class="row m-0">
             <div class="col-lg-6 col-md-12 p-3 d-flex align-items-center justify-content-left">
@@ -389,6 +392,9 @@
 
     <div class="penn-global my-5 mx-auto">
         <?php include_once dirname(__FILE__) . "/accordion.php" ?>
+    </div>
+    <div>
+        <?php include_once dirname(__FILE__) . "/footer.php"; ?>
     </div>
 
 
