@@ -39,10 +39,12 @@
         const card = document.querySelectorAll('.agami-card');
         console.log(`card =>`, card);
 
-        const p = agamiCard("marf", "hasf", "sdhf");
+        // const p = agamiCard("marf", "hasf", "sdhf");
 
-        for (let i = 0; i <= card.length; i++) {
-            card[i].appendChild(p);
+        for (let i = 0; i <= card.length - 1; i++) {
+            console.log(`i =>`, card[i]);
+
+            card[i].appendChild(agamiCard("marf", "hasf", "sdhf"));
         }
 
 
