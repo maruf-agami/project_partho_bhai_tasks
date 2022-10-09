@@ -1,9 +1,7 @@
 <div class="d-md-flex" style="background: #011F5B;padding: 30px;">
     <div class="d-flex align-items-center">
-        <div style="max-width: 95%;"><span><br><span style="color: rgb(255, 255, 255);">FEATURED
-                    STORY</span><br><br></span>
-            <h1 style="font-size: 39px;"><span style="color: rgb(255, 255, 255);">Exploration awaits
-                    as Penn Abroad ramps up student trips</span><br></h1>
+        <div style="max-width: 95%;"><span><br><span style="color: rgb(255, 255, 255);">{{title_one}}</span><br><br></span>
+            <h1 style="font-size: 39px;"><span style="color: rgb(255, 255, 255);">{{title_two}}</span><br></h1>
             <p style="font-size: 21px;">Paragraph<br><span style="color: rgb(255, 255, 255);">Two
                     years after the pandemic forced Penn Abroad to brings students home, trips are
                     back on and a busier-than-normal abroad schedule is upcoming.</span><br><br></p>

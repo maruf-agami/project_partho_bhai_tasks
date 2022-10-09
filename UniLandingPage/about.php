@@ -17,9 +17,11 @@
         */
         </style> -->
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/css/bootstrap.min.css">
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/js/bootstrap.min.js">
+        </script>
 
 
 
@@ -28,6 +30,7 @@
         <script>
             $(`title`).text("About | University of Pennsylvania");
         </script>
+
 
 
 
@@ -191,7 +194,7 @@
 </head>
 
 <body>
-<div id="nav_container_div" class="bg-light">
+    <div id="nav_container_div" class="bg-light">
         <?php include_once dirname(__FILE__) . "/navigation.php"; ?>
     </div>
     <header class="mt-4 container-div mx-auto p-0">
@@ -289,6 +292,35 @@
             <a href="#" class="btn btn-outline-light px-5 py-4">ALL PENN FACTS</a>
         </div>
     </div>
+    <Card></Card>
+    <script type='module'>
+        import {
+            agamiCard,
+            cardImgType3
+        } from "./about.js";
+
+        const data = [{
+                title: "title 1",
+                body: "body 1",
+                src: "https://cdn.pixabay.com/photo/2015/10/01/17/17/car-967387__340.png"
+            },
+            {
+                title: "title 2",
+                body: "body 2",
+                src: "https://cdn.pixabay.com/photo/2015/10/01/17/17/car-967387__340.png"
+            }
+        ]
+        const ImgCardContainer = document.getElementsByTagName('Card')[0];
+        ImgCardContainer.append(cardImgType3("sdfsd", "sdffds", "sdfsdf"));
+
+        const Card = document.createElement("Card");
+        console.log(Card);
+
+        for (let i = 0; i < data.length; i++) {
+            Card.append(agamiCard(data[i].title, data[i].body, data[i].src))
+
+        }
+    </script>
     <div class="card-div d-flex align-items-center">
         <div class="row mx-auto">
             <div class="col-lg-4 col-md-6 col-sm-12">
@@ -338,10 +370,13 @@
                 <div class="gallery-slider">
                     <div class="gallery">
                         <div class="gallery-card">
-                            <img src="Assets/more-about.jpg" class="w-100 h-auto" alt="Students celebrating Hey Day in front of the campus LOVE statue" class="gallery-card__image">
+                            <img src="Assets/more-about.jpg" class="w-100 h-auto"
+                                alt="Students celebrating Hey Day in front of the campus LOVE statue"
+                                class="gallery-card__image">
                             <div class="gallery-card__controls">
                                 <p class="gallery-card__text w-75 mt-4">
-                                    Members of the junior class celebrating Hey Day, the day they become
+                                    Members of the junior class celebrating Hey Day, the day they
+                                    become
                                     seniors, on College Green.
                                 </p>
 
@@ -396,6 +431,9 @@
     <div>
         <?php include_once dirname(__FILE__) . "/footer.php"; ?>
     </div>
+    <script>
+
+    </script>
 
 
 

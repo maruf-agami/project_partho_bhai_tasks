@@ -1,63 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-
-
-    <div class="agami-card"></div>
-    <div class="agami-card"></div>
-
-    <script>
-        // const arr = [{
-        //         name: "alibaba1",
-        //         age: "40"
-        //     },
-        //     {
-        //         name: "alibaba2",
-        //         age: "40"
-        //     },
-
-        //     {
-        //         name: "alibaba3",
-        //         age: "40"
-        //     },
-
-        //     {
-        //         name: "alibaba4",
-        //         age: "40"
-        //     },
-        // ]
-
-
-        const card = document.querySelectorAll('.agami-card');
-        console.log(`card =>`, card);
-
-        // const p = agamiCard("marf", "hasf", "sdhf");
-
-        for (let i = 0; i <= card.length - 1; i++) {
-            console.log(`i =>`, card[i]);
-
-            card[i].appendChild(agamiCard("marf", "hasf", "sdhf"));
-        }
-
-
-        function agamiCard(title, body, src) {
-            const childP = document.createElement("p")
-            console.log("HEllo")
-            childP.innerText = title;
-
-            const para = document.createElement("div");
-            para.appendChild(childP);
-            return para
-        }
-    </script>
-</body>
-
-</html>
+<script>
+    // let castom = document.createElement('g');
+    // console.log(castom);
+    function agamiCard(title, body, src) {
+        let div = document.createElement('div')
+        let temp = `
+            <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="${src}" alt="Card image cap">
+            <div class="card-body">
+            <h5 class="card-title">${title}</h5>
+            <p class="card-text">${body}</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            </div>
+            `;
+        div.innerHTML = temp;
+        return div;
+    }
+</script>
